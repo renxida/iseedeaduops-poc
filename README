@@ -1,0 +1,14 @@
+# What is this
+
+This is proof-of-concept code for our paper "I See Dead $\mu$ops: Leaking Secrets via Intel/AMD Micro-Op Caches", published in ISCA 2021.
+
+# Files in this
+
+- variant-1: this is a modified Spectre-v1 attack that uses the micro-op cache instead of the LLC
+- lfence-bypass: this is a proof-of-concept that the micro-op cache can make inserting LFENCE useless against spectre attacks
+
+# How to use this
+
+
+
+Each folder contains a ./run 
