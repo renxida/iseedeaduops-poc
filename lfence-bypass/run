@@ -1,0 +1,3 @@
+bn=$(basename "$1" .cpp)
+sudo ./enablepmc.sh
+g++ "$bn".cpp pfc.cpp -o "$bn".bin  -no-pie "${@:2}" && ./$bn.bin |tee $bn.out

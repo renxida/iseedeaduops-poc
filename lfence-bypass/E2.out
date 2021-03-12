@@ -1,0 +1,43 @@
+Compiled with: LFENCE,
+
+Case: Secret = 1, Training_bounds = 400, Malicious_bounds = 400
+                   0	FRONTEND_RETIRED.L1I_MISS
+               79616	IDQ.DSB_UOPS
+               17090	DSB2MITE_SWITCHES.PENALTY_CYCLES
+              134369	IDQ.MITE_UOPS
+              213985	TOTAL_UOPS
+
+Case: Secret = 0, Training_bounds = 400, Malicious_bounds = 400
+                   2	FRONTEND_RETIRED.L1I_MISS
+              178899	IDQ.DSB_UOPS
+                7270	DSB2MITE_SWITCHES.PENALTY_CYCLES
+               35166	IDQ.MITE_UOPS
+              214065	TOTAL_UOPS
+
+Case: Secret = 1, Training_bounds = 400, Malicious_bounds = 9001
+                  18	FRONTEND_RETIRED.L1I_MISS
+              138785	IDQ.DSB_UOPS
+               17360	DSB2MITE_SWITCHES.PENALTY_CYCLES
+               75295	IDQ.MITE_UOPS
+              214080	TOTAL_UOPS
+
+Case: Secret = 0, Training_bounds = 400, Malicious_bounds = 9001
+                   1	FRONTEND_RETIRED.L1I_MISS
+              181090	IDQ.DSB_UOPS
+                6200	DSB2MITE_SWITCHES.PENALTY_CYCLES
+               32906	IDQ.MITE_UOPS
+              213996	TOTAL_UOPS
+
+Case: Secret = 1, Training_bounds = 9001, Malicious_bounds = 9001
+                   0	FRONTEND_RETIRED.L1I_MISS
+              180821	IDQ.DSB_UOPS
+                6104	DSB2MITE_SWITCHES.PENALTY_CYCLES
+               33179	IDQ.MITE_UOPS
+              214000	TOTAL_UOPS
+
+Case: Secret = 0, Training_bounds = 9001, Malicious_bounds = 9001
+                   3	FRONTEND_RETIRED.L1I_MISS
+              179572	IDQ.DSB_UOPS
+                6609	DSB2MITE_SWITCHES.PENALTY_CYCLES
+               34430	IDQ.MITE_UOPS
+              214002	TOTAL_UOPS

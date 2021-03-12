@@ -1,0 +1,3 @@
+
+bn=dsbspectre
+g++ "$bn".cpp -o "$bn".bin "${@:2}" && ./$bn.bin |tee $bn.out

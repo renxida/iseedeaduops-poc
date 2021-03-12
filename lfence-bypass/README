@@ -1,0 +1,40 @@
+# Steps to enable performance counter measurements
+- turn off secure boot
+- ensure you are root
+- run `modprobe msr`
+- run `echo 2 > /sys/bus/event_source/devices/cpu/rdpmc`
+
+# Files
+attack.cpp                 - This is the main file that executes the attack
+pfc.h and pfc.cpp          - These provide functions and macros for using intel performance counters
+run                        - bash script for compiling and running the experiment
+stripes.hpp                - Includes the stripes which are used for tiger_0, tiger_0_copy, and tiger_super
+                           - These are carefully crafted to occupy specific sets and ways in the micro-op cache
+generate_stripes.py        - This is the script used to generate stripes.hpp (Requires python3)
+lscpu.out                  - CPU info of example machine (gathered running lscpu)
+E1.out, E2.out, and E3.out - Output from running the experiments on the example machine
+
+# How to Run Experiments
+There are 3 Experiments you should run:
+	E1: ./run attack
+	E2: ./run attack -DLFENCE
+	E3: ./run attack -DCPUID
+	
+These experiments will execute and display output for 6 cases, which are fully explained in attack.cpp.
+The key thing to note is that cases 1, 2, 5, and 6 are baseline cases where we are not attempting to steal the secret.
+Cases 3 and 4 are where we train with valid bounds and then steal the secret with a malicious (out of bounds) call to the victim function.
+
+E1:
+	Here there is no fence present after the security check in victim_function()
+	Unsurprisingly we are ABLE to speculate past the security check and load secret dependent data into the micro-op cache.
+
+E2:
+	This is the actual proof-of-concept attack.
+	Here there is an LFENCE after the security check in victim_function()
+	We are still ABLE to load the secret dependent data into the micro-op cache and then determine (using performance counters) if a particular function call was made.
+	
+E3:
+	Here there is a CPUID present after the security check in victim_function()
+	Unsurprisingly we are UNABLE to speculate past the security check and load secret dependent data into the micro-op cache.
+
+Expected outputs of these tests are explained in attack.cpp file and the example output files.
