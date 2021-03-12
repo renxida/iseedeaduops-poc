@@ -2,21 +2,21 @@ with flags:BITMANIP,SPEC,
 real	read
 real	read
 Done reading:8192
-7730 out of 8192 correct
-Ratio: 0.943604
+7783 out of 8192 correct
+Ratio: 0.950073
 error distribution:
 	pos	1-to-0	0-to-1	total
-	0	1	46	47
-	1	0	56	56
-	2	1	50	51
-	3	0	60	60
-	4	1	124	125
-	5	4	4	8
-	6	0	11	11
-	7	0	104	104
+	0	0	58	58
+	1	0	45	45
+	2	0	42	42
+	3	1	63	64
+	4	1	102	103
+	5	0	2	2
+	6	0	15	15
+	7	0	80	80
 3757 out of 8192 bits were 1
 message received:
-Vhe0uaves werg |ng, |xe!wress as grgon.\je heo|oc{-@mbglw tall an fair,nu in ue wled q lioiv ussueOf {tarw o sho(shimerm~.Tinvieldwas dancknw$thureWo&o}ys$on apmru unseen,And mgyt0of svqs"wis in her hair,And in her raiment glimmuring.There Veren came from }ou~vains cold,And lost he wandered under leaves,Andwe~e the Elveo-rivez }dhe wmkd(ane a sorrowiog.Hm pemr betee`tie&kolokk-eaves*d iw*i~ wnferdfmwvs ov goldUo$hew$mqne anl(hgv wleeves,End yer lr!l{ shfow vllowing.*Enchyntmenu`heale hs(wuyry vuet\hat"oves"ii}l wezu do}ed0toroqm?ZAnt frtj(hu ~awte~el,(srg and$fleetaod0orwped2iv(}oooecm oliwteinghouwx`wovEn wooes n Ul~ehomeSm"ig|uly#edho~0dqncyng neet,Ant left"him long|y ko t ramIn uhe {ilu~t rew yste~ig>e4heet0herebf tig!vlyi~o`ou~Ovpfee|3qwlghcs |indmnmgs~}{Oz mui!well{ng(ndergzounl,Y"hidenyllo{ uyveving.^ow"wytherd"lay the8g}ocoieavuwAnt onu y0nu,wkth5wigyig(so
+The leaves wes!|n,0thurcs{pwas(gremn,le)hgmloc-ucmm0vemland0feis,Andyn uhe2glate!a!igjt was(ee~Of stas0in sxeeow shmoeyg.Wnvil$w$dancioo thereTo music of a pipe unseen,And light of wtars0wi`indher"hair,Qdhin hearaimen|2glimmmvkng.There Beren came from mountains cold,And los he waneurmd uoder leaves,And whure the Elven-river rolludHe walked alone and sorrowkng.He$peerel between the he}lock=lmesEne"scw"if onfmv,flowe~s o gomdUpn$her mantlgqd!hmr sloevw<Anehr(xair0|ike0wadow(folmwmng/enchantoent egletxjwmry0eelawdo~ez ills wre doooe vo roam;Qnd for| he"ma{teng<`tsng(q~d lmmt,And(graspmf atxmooorgamsbgmy{tenmnw.Uxrougj wov}n`woots$in elwenxomgS}m0|igxuly"fleu2on0daning"neeu,ndleft him!|one}(still)o soamYn e5sylmnt(f~est lystenmngne(xead"there ot$|xe"foying0souoOffeet0as lixt qw0nen=luael_v0u{ic wen|mng,unteuo>In%iiedmo2hommows!querinw.Now witmred nay the hem|ogo-whuv}s-Sne onu ryponm with sighi~gbso
 
 
 
@@ -56,11 +56,11 @@ And one by one with sighing so
 
 
 
-Thresholds for each bit in any char:	0: 7274
-	1: 7156
-	2: 7160
-	3: 7270
+Thresholds for each bit in any char:	0: 7280
+	1: 7152
+	2: 7162
+	3: 7274
 	4: 7804
-	5: 7884
-	6: 7880
-	7: 7884
+	5: 7886
+	6: 7882
+	7: 7886
