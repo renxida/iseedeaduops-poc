@@ -1,6 +1,6 @@
 # What is this
 
-This is proof-of-concept code for our paper "I See Dead $\mu$ops: Leaking Secrets via Intel/AMD Micro-Op Caches", published in ISCA 2021.
+This is proof-of-concept code for our paper [I See Dead micro-ops: Leaking Secrets via Intel/AMD Micro-Op Caches](https://ieeexplore.ieee.org/abstract/document/9499837), published in ISCA 2021.
 
 # Files in this
 
